@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(14, 14, 14);
+    color: #d4af37;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #222222;
+    padding: 20px 0;
+    border-bottom: 3px solid #bdfff0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-logo {
+    width: 40%;
+}
+
+.header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://preview.redd.it/puo765tsqgn91.png?auto=webp&s=9349bdb7d84824f296bad22db061a497f59ab3ab');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.7) 100%);
+    z-index: 2;
+}
+
+.header-content {
+    position: relative;
+    z-index: 3;
+}
+
+.site-subtitle {
+    color: #eee;
+    font-size: 18px;
+    font-style: italic;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    margin-top: 15px;
+    padding: 5px 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid #bdfff0;
+}
+
+.navigation {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.nav-section {
+    flex: 0 0 48%;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-title {
+    color: #d4af37;
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #444;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-grow: 1;
+}
+
+.nav-links li {
+    margin-bottom: 0;
+}
+
+.nav-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #2a2a2a;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #484848;
+}
+
+.main-content {
+    display: flex;
+    margin-bottom: 40px;
+    gap: 30px;
+}
+
+.image-section {
+    flex: 1;
+    background-color: #111;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.image-container {
+    width: 100%;
+    height: 300px;
+    border: 2px solid #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-info {
+    color: #eee;
+    font-size: 16px;
+    text-align: center;
+}
+
+.info-section {
+    flex: 1;
+    background-color: #111;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.info-title {
+    color: #d4af37;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.info-content {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.gallery-section {
+    margin-bottom: 40px;
+}
+
+.gallery-title {
+    color: #d4af37;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.gallery {
+    display: flex;
+    gap: 20px;
+}
+
+.gallery-item {
+    flex: 1;
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gallery-image:hover {
+    border: 2px solid #eee;
+}
+
+.gallery-caption {
+    padding: 15px;
+    text-align: center;
+    color: #eee;
+    font-size: 16px;
+}
+
+.additional-info {
+    padding: 5px;
+    width: 100%;
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.additional-title {
+    color: #d4af37;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.additional-content {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #111;
+    padding: 25px 0;
+    border-top: 3px solid #bdfff0;
+    text-align: center;
+}
+
+.copyright {
+    color: #777;
+    font-size: 14px;
+}
+
+@media (max-width: 992px) {
+    .main-content {
+        flex-direction: column;
+    }
+    .gallery {
+        flex-wrap: wrap;
+    }
+    .gallery-item {
+        flex: 0 0 calc(50% - 20px);
+    }
+    .nav-container {
+        gap: 30px;
+    }
+    .nav-section {
+        flex: 0 0 48%;
+        min-height: 220px;
+    }
+    .nav-links {
+        gap: 10px;
+    }
+    .nav-links a {
+        padding: 8px 12px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-section {
+        padding: 15px;
+        min-height: 200px;
+    }
+    .gallery-item {
+        flex: 0 0 100%;
+    }
+    .site-title {
+        font-size: 36px;
+    }
+    .nav-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .nav-section {
+        flex: 0 0 100%;
+        min-height: auto;
+    }
+    .nav-links {
+        gap: 8px;
+    }
+    .nav-links a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+    .nav-links a i {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navigation {
+        padding: 15px 0;
+    }
+    .nav-section {
+        padding: 10px;
+    }
+    .site-title {
+        font-size: 28px;
+        letter-spacing: 3px;
+    }
+    .site-title::after {
+        width: 150px;
+    }
+    .nav-links {
+        gap: 6px;
+    }
+}
